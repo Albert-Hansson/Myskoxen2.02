@@ -1,8 +1,10 @@
-# Myskoxen2.02
+# Myskoxen 2.02
 
-![Alternativ text](media/expuppst.jpg)
 
+<img src="media/expuppst.jpg" alt="Modell" width="250" align="left">
 Myskoxen är ett instrument för mätning av motstånd i rullskidor som utvecklas av Friction Quantifying Systems Nordic AB. Denna handbok innehåller instruktioner för hur olika typer av mätningar kan genomföras med Myskoxen samt hur de bör analyseras. 
+
+<br clear="left">
 
 ## Innehåll
 1. [Förberedelser](#förberedelser)
