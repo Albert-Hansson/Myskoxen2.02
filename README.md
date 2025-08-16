@@ -53,12 +53,17 @@ finns att välja bland. Man skrollar i menyn genom att vrida på menyväljaren. 
 
 **Inställningar** tar dig till ytterligare en meny där två olika inställningar kan göras; **Program** och **Språk**
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Program:</strong> Denna inställning låter dig skrolla mellan olika program. </p>
-<ol>
-  <li>hej</li>
-  <li>hej</li>
-  <li>hej</li>
-</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Program:</strong> Denna inställning låter dig skrolla mellan olika program. De tillgängliga programmen är </p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.  0 s. Mäter rullmotståndet direkt    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.  30 s. Väntar 30 sekunder och mäter sedan rullmotståndet  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.  1 min. Väntar 1 minut och mäter sedan rullmotståndet  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.  5 min. Väntar 5 minuter och mäter sedan rullmotståndet  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.  10 min. Väntar 10 minuter och mäter sedan rullmotståndet  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.  20 min. Väntar 20 minuter och mäter sedan rullmotståndet  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.  Intervall. Låter dig välja en totaltid och en intervalltid och mäter sedan automatiskt rullmotståndet så många gånger som intervalltiden får plats i totaltiden och anpassar sedan mätpunkterna till en temperaturmodell och predikterar rullmotståndets värde efter 20 minuter.  <br>
+
+
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Språk:</strong> Denna inställning låter dig skrolla mellan alternativen [Svenska] och [Engelska]. Välj språk genom att klicka på menyväljaren. </p>
 
@@ -82,7 +87,30 @@ När mätningen är över presenteras ett resultat på skärmen och alternativen
 
 ## Analysera resultatet
 
-Efter att en mätsession avslutats och datan ska analyserats finns två alternativ; att använda Myskoxens inbyggda statistik verktyg, eller att exportera mätsessionen till en extern dator för att analysera den med hjälp av kalkylarket `Myskoxen_dataanalys.xlsx` ([Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing))
+Efter att en mätsession avslutats och datan ska analyserats finns två alternativ; att använda Myskoxens inbyggda statistik verktyg, eller att exportera mätsessionen till en extern dator för att analysera den med hjälp av kalkylarket `Myskoxen_dataanalys.xlsx` ([Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing)). För att exportera datan till kalkylbladet, följ dessa steg:
+
+1. Förbered mätsessionen för export enligt instruktionerna i kapitltet [Navigera i Myskoxens menysystem](#navigera-i-myskoxens-menysystem).
+2. Öppna kommandotolken (Terminal på mac) på din dator.
+3. Om du inte har `mpremote` installerat på din dator, kör kommandot (gäller både för kommandotolken och för Terminal)
+   
+       pip3 install mpremote
+
+4. Kör kommandot
+
+       mpremote connect auto fs cp :export.csv ~/sökväg/filnamn.csv
+
+   på MacOS, eller
+
+       mpremote connect auto fs cp :export.csv C:\sökväg\filnamn.csv
+
+   på Windows.
+
+5. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing) i Google Kalkylark.
+6. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
+
+
+
+
 
 
 ## Licens
