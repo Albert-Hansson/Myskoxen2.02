@@ -69,8 +69,20 @@ Skrolla upp till menyvalet [Tillbaka] för att ta dig till huvudmenyn.
 
 ## Utför en mätning
 
+När Myskoxen installerats och ett program ställts in är instrumentet redo för mätning. En mätning genomförs på följande sätt:
+
+1. Fäll upp lastbommen
+2. Placera en skida in Myskoxens infästningsanordning och se till att framhjulet vilar mot svänghjulet
+3. Skjut skidan i sidled för att säkerställa att rullskidehjulets och svänghjulets centrum ligger på en lodrät linje
+4. Starta motorn med strömbrytaren på databoxen.
+5. Fäll kontrollerat ner lastbommen och justera dess läge med höjdskruven. Lastbommen ska vara horisontell när mätningen utförs
+6. Klicka [Mät nu] i databoxens huvudmeny
+
+När mätningen är över presenteras ett resultat på skärmen och alternativen att starta en identisk mätning eller returnera till huvudmenyn dyker upp. Använd menyväljaren för att klicka [Upprepa] eller [Tillbaka]. 
 
 ## Analysera resultatet
+
+Efter att en mätsession avslutats och datan ska analyserats finns två alternativ; att använda Myskoxens inbyggda statistik verktyg, eller att exportera mätsessionen till en extern dator för att analysera den med hjälp av kalkylarket `Myskoxen_dataanalys.xlsx` ([Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing))
 
 
 ## Licens
