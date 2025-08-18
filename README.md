@@ -47,29 +47,60 @@ Myskoxen är utrustad med en integrerad skärm och menyväljare som tillsammans 
 
 finns att välja bland. Man skrollar i menyn genom att vrida på menyväljaren. Rotation medurs skrollar nedåt och rotation moturs skrollar uppåt. Man väljer önskat menyval genom ett tryck på menyväljaren. 
 
+<p align="left">
+  <img src="media/huvudmeny.png" alt="Huvudmeny" width="300"><br>
+  <em>Såhär bör huvudmenyn se ut direkt efter att databoxen slagits på.</em>
+</p>
+
+
 **Mät nu** startar en mätning direkt. Typen av mätning som startas kan ändras under **Inställningar**. Om typen av mätning inte ställts in, genomförs en mätning av den typ som senast ställdes in. När mätprogrammet körts klart leds du till ett val om att antingen upprepa en identisk mätning eller att returnera till huvudmenyn. Använd menyväljaren för att klicka [Upprepa] eller [Tillbaka]. 
 
 **Statistik** leder dig till en kort tabell som översiktligt presenterar de mätningar som gjorts sedan en mätsession senast exporterades eller sedan instrumentet rensades. På tre rader visas **antalet mätningar** som gjorts, **snittfriktionen** och **den relativa standardavvikelsen** som ger ett mått på hur stor den procentuella spridningen är bland de hjul som testats. Här ges du alternativet att returnera till huvudmenyn eller rensa instrumentet. Använd menyväljaren för att klicka [Tillbaka] eller [Rensa]. Väljer du [Rensa], kommer (efter att du bekräftat valet) all data från de mätningar som sparats på instrumentet raderas.
 
+<p align="left">
+  <img src="media/stat.png" alt="Statistik" width="300"><br>
+  <em>Vrid menyväljaren för att ställa markören på <strong>Tillbaka</strong> eller <strong>Rensa</strong>.</em>
+</p>
+
 **Inställningar** tar dig till ytterligare en meny där två olika inställningar kan göras; **Program** och **Språk**
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Program:</strong> Denna inställning låter dig skrolla mellan olika program. De tillgängliga programmen är </p>
+### Program  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.  0 s. Mäter rullmotståndet direkt    <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.  30 s. Väntar 30 sekunder och mäter sedan rullmotståndet  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.  1 min. Väntar 1 minut och mäter sedan rullmotståndet  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.  5 min. Väntar 5 minuter och mäter sedan rullmotståndet  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.  10 min. Väntar 10 minuter och mäter sedan rullmotståndet  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.  20 min. Väntar 20 minuter och mäter sedan rullmotståndet  <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.  Intervall. Låter dig välja en totaltid och en intervalltid och mäter sedan automatiskt rullmotståndet så många gånger som intervalltiden får plats i totaltiden och anpassar sedan mätpunkterna till en temperaturmodell och predikterar rullmotståndets värde efter 20 minuter.  <br>
+Denna inställning låter dig välja mellan olika program. De tillgängliga programmen är </p>
 
+- **0 s:** Mäter rullmotståndet direkt
+- **30 s:** Väntar 30 sekunder och mäter sedan rullmotståndet
+- **1 min:** Väntar 1 minut och mäter sedan rullmotståndet
+- **5 min:** Väntar 5 minuter och mäter sedan rullmotståndet
+- **10 min:** Väntar 10 minuter och mäter sedan rullmotståndet
+- **20 min:** Väntar 20 minuter och mäter sedan rullmotståndet
+- **Intervall:** Låter dig välja en totaltid och en intervalltid och mäter sedan automatiskt rullmotståndet så många gånger som intervalltiden får plats i totaltiden och anpassar sedan mätpunkterna till en temperaturmodell och predikterar rullmotståndets värde efter 20 minuter.
 
+<p align="left">
+  <img src="media/radera_intervalldata.png" alt="Radera intervalldata" width="300"><br>
+  <em>Om intervallprogrammet väljs dyker denna ruta upp, eftersom endast data från en typ av intervallprogram kan lagras samtidigt. Välj ja om du vill starta en mätsession med ett nytt intervallprogram.</em>
+</p>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Språk:</strong> Denna inställning låter dig skrolla mellan alternativen [Svenska] och [Engelska]. Välj språk genom att klicka på menyväljaren. </p>
+<p align="left">
+  <img src="media/totaltid.png" alt="Totaltid" width="300"><br>
+  <em>Skrolla i listan över totaltider för att välja intervallprogrammets längs. Klicka för att välja.</em>
+</p>
+
+<p align="left">
+  <img src="media/intervalltid.png" alt="Intervalltid" width="300"><br>
+  <em>Skrolla i listan över intervalltider för att välja mätnningarnas täthet. Klicka för att välja. Notera att intervalltiden måste vara lika lång som eller kortare än totaltiden.</em>
+</p>
+
+**Språk** Denna inställning låter dig skrolla mellan alternativen [Svenska] och [Engelska]. Välj språk genom att klicka på menyväljaren.
 
 Skrolla upp till menyvalet [Tillbaka] för att ta dig till huvudmenyn.
 
 **Exportera data** låter dig lagra den mätsession du tagit i en fil som kan överföras till din dator. Notera att endast en fil i taget kan exporteras. När session gjorts om till exporterbart format måste datan också exporteras till en extern dator innan en ny mätsession kan lagras som exporterbar (läs om hur en export gör i kapitlet [Analysera resultatet](#analysera-resultatet)). När en mätsession gjorts exporterbar raderas mätsessionen från gränssnittet och visas därför inte längre under sidan **Statistik**.
+
+<p align="left">
+  <img src="media/intervalltid.png" alt="Intervalltid" width="300"><br>
+  <em>Skrolla i listan över intervalltider för att välja mätnningarnas täthet. Klicka för att välja. Notera att intervalltiden måste vara lika lång som eller kortare än totaltiden.</em>
+</p>
 
 
 ## Utför en mätning
