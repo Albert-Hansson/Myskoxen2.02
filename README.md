@@ -24,7 +24,7 @@ För att dels använda Myskoxen på ett säkert sätt, dels möjliggöra så nog
 - placeras på ett stabilt underlag såsom en stadig arbetsbänk eller ett golv i inomhusmiljö, skyddat från vatten och andra vätskor.
 - ställas på en yta som är plan och i våg. 
 - användas i ett rymligt utrymme och omges av minst 50 cm av fritt luftrum år alla håll.
-- endast användasi inomhusmiljö, skyddat från vatten och andra vätskor.
+- endast användas i inomhusmiljö, skyddat från vatten och andra vätskor.
 - inte användas som det är synilgt eller misstänkt skadat.
 - kopplas till elnätet med oskadda kablar som inte utgör snubbelrisk eller risk för skada på instrumentet.
 - endast användas under oavbruten uppsikt.
@@ -74,28 +74,31 @@ Skrolla upp till menyvalet [Tillbaka] för att ta dig till huvudmenyn.
 
 ## Utför en mätning
 
-När Myskoxen installerats och ett program ställts in är instrumentet redo för mätning. En mätning genomförs på följande sätt:
+När Myskoxen försetts med ström, databoxen startats och ett program ställts in är instrumentet redo för mätning. En mätning genomförs på följande sätt:
 
 1. Fäll upp lastbommen
-2. Placera en skida in Myskoxens infästningsanordning och se till att framhjulet vilar mot svänghjulet
-3. Skjut skidan i sidled för att säkerställa att rullskidehjulets och svänghjulets centrum ligger på en lodrät linje
-4. Starta motorn med strömbrytaren på databoxen.
-5. Fäll kontrollerat ner lastbommen och justera dess läge med höjdskruven. Lastbommen ska vara horisontell när mätningen utförs
-6. Klicka [Mät nu] i databoxens huvudmeny
+2. För fram spaken på infästningsanordningens vänstra sida.
+3. Placera en skida in Myskoxens infästningsanordning och spänn åt den med infäsningsanordningens ratt. Den behöver inte spännas hårt eftersom skidan i sidled inte kommer utsättas för krafter större än motsvarande 500 g. 
+4. Se till att framhjulet vilar mot svänghjulet.
+5. Skjut skidan i sidled för att säkerställa att rullskidehjulets och svänghjulets centrum ligger på en lodrät linje
+6. Starta motorn med strömbrytaren på databoxen. En skida får aldrig vara unde rlastbommens tryck utan att motor är påslagen. 
+7. Fäll kontrollerat ner lastbommen och justera dess läge med höjdskruven. Lastbommen ska vara horisontell när mätningen utförs
+8. Klicka [Mät nu] i databoxens huvudmeny
 
-När mätningen är över presenteras ett resultat på skärmen och alternativen att starta en identisk mätning eller returnera till huvudmenyn dyker upp. Använd menyväljaren för att klicka [Upprepa] eller [Tillbaka]. 
+När mätningen är över presenteras ett resultat på skärmen och alternativen att starta en identisk mätning eller returnera till huvudmenyn dyker upp. Använd menyväljaren för att klicka [Upprepa] eller [Tillbaka]. Slå av motorn och släpp infästningsanordningens spänning med spaken genom att föra den bakåt. Notera att om flera skidor med samma rambredd ska mätas räcker det att använda spaken för att fästa och släppa skidan. 
 
 ## Analysera resultatet
 
 Efter att en mätsession avslutats och datan ska analyserats finns två alternativ; att använda Myskoxens inbyggda statistik verktyg, eller att exportera mätsessionen till en extern dator för att analysera den med hjälp av kalkylarket `Myskoxen_dataanalys.xlsx` ([Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing)). För att exportera datan till kalkylbladet, följ dessa steg:
 
 1. Förbered mätsessionen för export enligt instruktionerna i kapitltet [Navigera i Myskoxens menysystem](#navigera-i-myskoxens-menysystem).
-2. Öppna kommandotolken (Terminal på mac) på din dator.
-3. Om du inte har `mpremote` installerat på din dator, kör kommandot (gäller både för kommandotolken och för Terminal)
+2. Stäng av databoxen. Detta är viktigt eftersom databoxen skadas av att försörjas med ström både internt och externt. 
+3. Öppna kommandotolken (Terminal på mac) på din dator.
+4. Om du inte har `mpremote` installerat på din dator, kör kommandot (gäller både för kommandotolken och för Terminal)
    
        pip3 install mpremote
 
-4. Kör kommandot
+5. Kör kommandot
 
        mpremote connect auto fs cp :export.csv ~/sökväg/filnamn.csv
 
@@ -105,8 +108,8 @@ Efter att en mätsession avslutats och datan ska analyserats finns två alternat
 
    på Windows.
 
-5. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing) i Google Kalkylark.
-6. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
+6. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing) i Google Kalkylark.
+7. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
 
 
 
