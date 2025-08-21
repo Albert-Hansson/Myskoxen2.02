@@ -152,16 +152,24 @@ Efter att en mätsession avslutats och datan ska analyserats finns två alternat
 
 5. Kör kommandot
 
-       mpremote connect auto fs cp :export.csv ~/sökväg/filnamn.csv
+       python3 -m mpremote connect auto fs cp :export.csv ~/sökväg/filnamn.csv
+
+   exempelvis
+
+       python3 -m mpremote connect auto fs cp :export.csv ~/Desktop/skidor.csv
 
    på MacOS, eller
 
-       mpremote connect auto fs cp :export.csv C:\sökväg\filnamn.csv
+       python3 -m mpremote connect auto fs cp :export.csv C:\sökväg\filnamn.csv
+
+   exempelvis
+
+       python3 -m mpremote connect auto fs cp :export.csv C:\Users\KalleKula\Documents\skidor.csv
 
    på Windows.
 
-6. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing) i Google Kalkylark.
-7. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
+7. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/16WV2TlsQWZeQUonpthyPqa8hI7zSDBZ-YQwopqgFLOc/edit?usp=sharing) i Google Kalkylark.
+8. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
 
 ## Licens
 
