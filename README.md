@@ -13,9 +13,12 @@ Myskoxen är ett instrument för mätning av motstånd i rullskidor som utveckla
 4. [Analysera resultatet](#analysera-resultatet)
 5. [Licens](#licens)
 
-<img src="media/info.png" alt="Info" width="250" align="left">
 
-I fortsättningen kommer Myskoxen delar markeras i text med en siffra 1 - 8 för att tydliggöra vilken del av instrumentet som avses.
+Nedan syns en karta över Myksoxen och de delar som en användare behöver bekanta sig med för att lära sig använda instrumentet.
+
+<img src="media/info.png" alt="Info" width="500" align="left">
+
+I fortsättningen kommer Myskoxens delar markeras i text med en siffra 1 - 11 för att tydliggöra vilken del av instrumentet som avses.
 <br clear="left">
 
 1. Höjdskruv som kan justeras för att lastbommen ska ligga horisontellt under mätning.
