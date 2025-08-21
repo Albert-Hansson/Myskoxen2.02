@@ -13,6 +13,24 @@ Myskoxen är ett instrument för mätning av motstånd i rullskidor som utveckla
 4. [Analysera resultatet](#analysera-resultatet)
 5. [Licens](#licens)
 
+<img src="media/info.png" alt="Info" width="250" align="left">
+
+I fortsättningen kommer Myskoxen delar markeras i text med en siffra 1 - 8 för att tydliggöra vilken del av instrumentet som avses.
+<br clear="left">
+
+1. Höjdskruv som kan justeras för att lastbommen ska ligga horisontellt under mätning.
+2. Databoxen
+3. Strömbrytare till databoxen
+4. Snabbfäste: En spak som underlättar fastspänning och urtagning av en rullskida.
+5. Lastbom som kan fällas upp och ner och som simulerar en åkares vikt.
+6. Spänningsjusteringsskruv: Ett vred som används för att ställa in spänningen för att hålla fast en rullskida.
+7. Strömingång: Här finns uttag för ström försörjning, instrumentets säkring och strömbrytare.
+8. Exportuttag som används när en mätsession ska skickas till en dator för analys.
+9. Menyväljare som används för att navigera i Myskoxens gränssnitt.
+10. Strömbrytare till motorn
+11. Svänghjul.
+
+
 ## Förberedelser
 
 Myskoxen är ett elektriskt drivet instrument bestående av ett flertal tunga rörliga delar. Det är därför viktigt att instrumentet används på ett säkert sätt i samrådan med följande instruktioner. Skaparna av Myskoxen ansvarar inte för brukande av instrumentet som avviker från det som står beskrivet in denna handbok. 
