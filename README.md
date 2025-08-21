@@ -163,9 +163,26 @@ Efter att en mätsession avslutats och datan ska analyserats finns två alternat
 6. Öppna [Kalkylblad](https://docs.google.com/spreadsheets/d/1_fZBtHfAZzbTA4D_QNeX7JoPtTj1VCKf1J8bDB856G8/edit?usp=sharing) i Google Kalkylark.
 7. Importera mätsessionen genom att först välja [Arkiv] -> [Importera] -> [Uppladdning] -> [Bläddra]. Navigera till din exporterade fil och öppna den. Under **Importera plats** välj **Infoga nytt/nya arbetsblad** och under **Avgränsartyp** välj **Komma**. Låt boxen **Konvertera text till siffror, datum och formler** vara markerad och klicka **Importera data**. Ett nytt arbetsblad med samma namn som din fil kommer skapas i kalkylarket. Välj fliken **Summering** och ställ dig i rutan där "Data" står skrivet. Ändra texten i rutan till namnet på fliken som innehåller den mätsession du vill analysera. Notera att arbetsboken kan innehålla flera mätsessionen samtidigt och att det då går att alternera mellan dem genom att endast ändra "Data"-rutan i fliken **Summering**. 
 
-
-
-
-
-
 ## Licens
+
+MIT License
+
+Copyright (c) 2025 Albert-Hansson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
